@@ -25,13 +25,17 @@ public class mathStats
                 }
                 catch (InputMismatchException e)
                 {
-                     System.out.println("Please enter a number that has increments passed the decimal plce."+e.getMessage());
+                    
+                     System.out.println("Please enter a number that has increments passed the decimal place. "+e.getMessage());
                     scanner.next();
                    
                 }
+           
             
    
         }
+         scanner.close();
+        
         maximum = userDouble[0];
         minimum = userDouble[0];
 
