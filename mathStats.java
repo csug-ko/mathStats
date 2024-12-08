@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 public class mathStats
+    //(',')
 {
     public static void main(String[] arg)
     {
@@ -20,10 +21,13 @@ public class mathStats
                       System.out.println("Please enter a floating number.");
                      userDouble[i] = scanner.nextDouble();
                      i++;
+                   
                 }
                 catch (InputMismatchException e)
                 {
-                     System.out.println("Please enter a number that has increments passed the decimal plce.");
+                     System.out.println("Please enter a number that has increments passed the decimal plce."+e.getMessage());
+                    scanner.next();
+                   
                 }
             
    
